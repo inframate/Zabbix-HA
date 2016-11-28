@@ -1,0 +1,68 @@
+{
+  "nodes": {
+    "mariadb-master2.domain.com": {
+      ":ip": "192.168.144.18",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 512,
+      ":box": "simo/CentOS7-Zabbix3_2-All",
+      ":bootstrap": "bootstrap-mariadb-master2.sh"
+    },
+    "mariadb-master1.domain.com": {
+      ":ip": "192.168.144.19",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 512,
+      ":box": "simo/CentOS7-Zabbix3_2-All",
+      ":bootstrap": "bootstrap-mariadb-master1.sh"
+    },
+    "zabbix-server2.domain.com": {
+      ":ip": "192.168.144.17",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 512,
+      ":box": "simo/CentOS7-Zabbix3_2-All",
+      ":bootstrap": "bootstrap-zabbix-server2.sh"
+    },
+    "zabbix-server1.domain.com": {
+      ":ip": "192.168.144.16",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 512,
+      ":box": "simo/CentOS7-Zabbix3_2-All",
+      ":bootstrap": "bootstrap-zabbix-server1.sh"
+    },
+    "zabbix-web2.domain.com": {
+      ":ip": "192.168.144.14",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 256,
+      ":box": "simo/CentOS7-Zabbix3_2-All",
+      ":bootstrap": "bootstrap-zabbix-web2.sh"
+    },
+    "zabbix-web1.domain.com": {
+      ":ip": "192.168.144.13",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 256,
+      ":box": "simo/CentOS7-Zabbix3_2-All",
+      ":bootstrap": "bootstrap-zabbix-web1.sh"
+    },
+    "lb2.domain.com": {
+      ":ip": "192.168.144.12",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 256,
+      ":box": "simo/CentOS7-Zabbix3_2-All",
+      ":bootstrap": "bootstrap-lb2.sh"
+    },
+    "lb1.domain.com": {
+      ":ip": "192.168.144.11",
+      "ports": [],
+      ":cpus": 1,
+      ":memory": 256,
+      ":box": "simo/CentOS7-Zabbix3_2-All",
+      ":bootstrap": "bootstrap-lb1.sh"
+    }
+  }
+}
